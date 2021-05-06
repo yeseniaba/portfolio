@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="docs_landing.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Docs</title>
+
+
+		<div class="flex-header">
+ 		 <div style="flex-grow: 14;text-align: left;padding:10px">&Omega;  OMEGA Docs</div>
+
+  		<div style="flex-grow: 1">Contact Support</div>  
+  		<div style="flex-grow: 1;background:#ff8c00;">Log In</div>
+</div>
+</head>
+<body>
+<div class="intro">
+  <h1>Omega Documentation</h1>
+  <p>Explore our guides, code samples, and tutorials.</p>
+</div>
+<div class="padded">
+<div class="flex-container">
+  <div>
+<img src="outline_record_voice_over_black_48dp.png"></img>
+<p class="title">OmegaVoice</p>
+<p>Programmatically or manually monitor, protect, and report on the money you make with Stripe.</p>
+<p>Get Started &#8594;</p>
+<p>IN THIS SECTION</p>
+<ul>
+    <li>Overview</li>
+    <li>Tutorials</li>
+    <li>Code Samples</li>
+</ul>
+</div>
+
+<div>
+<img src="outline_fingerprint_black_48dp.png"></img>
+<p class="title">OmegaIdentify</p>
+<p>Programmatically or manually monitor, protect, and report on the money you make with Stripe.</p>
+<p>Get Started &#8594;</p>
+<p>IN THIS SECTION</p>
+<ul>
+    <li>Overview</li>
+    <li>Tutorials</li>
+    <li>Code Samples</li>
+</ul>
+</div>
+
+<div>
+<img src="outline_payment_black_48dp.png"></img>
+<p class="title">OmegaPay</p>
+<p>Programmatically or manually monitor, protect, and report on the money you make with Stripe.</p>
+<p>Get started  &#8594;</p>
+<p>IN THIS SECTION</p>
+<ul>
+    <li>Overview</li>
+    <li>Tutorials</li>
+    <li>Code Samples</li>
+</ul>
+</div>
+
+<div>
+<img src="outline_image_black_48dp.png"></img>
+<p class="title">OmegaImages</p>
+<p>Programmatically or manually monitor, protect, and report on the money you make with Stripe.</p>
+<p>Get started &#8594;</p>
+<p>IN THIS SECTION</p>
+<ul>
+    <li>Overview</li>
+    <li>Tutorials</li>
+    <li>Code Samples</li>
+</ul>
+</div>
+
+</div>
+
+
+
+
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</div>
+</body>
+</html>
