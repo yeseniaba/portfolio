@@ -1,2 +1,2 @@
 # Yesenia Barajas
-Yesenia's website and portfolio 
+Check out [Yesenia's website and portfolio|home.html]
