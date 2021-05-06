@@ -1,0 +1,325 @@
+
+h2 {
+	background-color: #009c9e;
+	color: white;
+	padding-top: 13px;
+	padding-bottom: 13px;
+	padding-left: 6px;
+	margin-top: 0px;
+	font-size: 25px;
+	border-radius: 3px;
+	text-align: left;
+	font-weight: 500;
+	font-size: 2vw;
+}
+
+body
+{
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    margin: 0px;
+
+}
+
+a {  
+	color: #339FFF;
+	text-decoration: none;
+	font-size: 1vw;
+
+
+}
+
+img {
+	position: relative;
+/*  left: 10px;*/
+  width: 25%;
+  height: auto;
+
+}
+
+
+p {
+/*	font-size: 12px;*/
+	text-align: left;
+	padding: 2px;
+	margin-left: 7px;
+  font-size: 1vw;
+
+}
+
+li {
+/*  font-size: 12px;*/
+  text-align: left;
+  font-size: 1vw;
+
+}
+
+.flex-header {
+  display: flex;
+  background-color: #233659;
+  height: 55px;
+  justify-content: flex-start;
+}
+
+
+.flex-header > div {
+  background-color: #233659;
+  margin: 0px;
+  padding-top: 10px;
+  padding-left: 0px;
+  font-size: 18px;
+  text-align: center;
+  line-height: 2;
+  color: white;
+}
+
+
+
+
+/* Header/Logo Title */
+/*.header {
+  padding: 0px;*/
+/*  text-align: center;*/
+/*  background: #233659;
+  color: white;
+  font-size: 18px;
+  color: white;
+  font-family: "Whitney SSm A","Whitney SSm B","Helvetica Neue","Helvetica","Arial",sans-serif;
+  height: 3rem;
+
+}*/
+
+/*.header img {
+  float: left;
+  width: 100px;
+  height: 100px;
+  padding-top: 0px;
+
+}*/
+
+
+.content {
+  padding: 16px;
+}
+
+/* Clear floats after the columns */
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: center;
+  width: 100%;
+  padding: 20px;
+  height: 100vh;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 0px;
+  border-right: solid;
+  border-color: #f7fafc;
+  border-width: 2px;
+
+}
+
+.column a {
+	display: block;
+	font-size: 15px;
+	padding: 5px;
+	color: black;
+	text-decoration: none;
+}
+
+.column a:hover {
+  background-color: #31e89f;
+  color: white;
+}
+
+.columnB {
+  float: left;
+  width: 85%;
+  padding: 10px;
+  height: 100vh;
+  padding-top: 0px;
+  padding-right: 10px;
+  padding-left: 20px;
+  padding-bottom: 0px;
+
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 0px;
+}
+
+
+.flex-container {
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 100px;
+  padding-top: 20px;
+  flex-direction: row;
+
+}
+
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+
+.flex-container > div {
+  background-color: white;
+  margin: 10px;
+  padding: 5%;
+  padding-top: 5%;
+  font-size: 25px;
+  padding-bottom: 0px;
+  width: 45%;
+  text-align: left;
+  height: 100%;
+  border-style: solid;
+  border-color: #DCDCDC;
+  border-width: 1px;
+  line-height: 20px;
+  flex-direction: row;
+}
+
+
+.title {
+  font-size: 1vw;
+  font-weight: bold;
+}
+
+#title-title {
+	background-color: #31e89f;
+	border-style: solid;
+	border-width: 3px;
+	padding: 10px;
+
+
+}
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 12px;
+  border: 0px solid grey;
+  float: right;
+  width: 80%;
+  background: #f1f1f1;
+  margin-top: 5px;
+
+/*  margin-left: -240px;*/
+}
+
+form.example button {
+  float: right;
+  width: 20%;
+  padding: 10px;
+  background: #ff8c00;
+  color: white;
+  font-size: 12px;
+  border: 0px solid grey;
+  border-left: none;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+
+.collapsible {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #ff8c00;
+  color: white;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+.subtitle {
+	font-size: 16px;
+	font-weight: normal;
+}
+
+.logo {
+	color: white;
+	width: 200px;
+/*	padding: 15px;*/
+	
+}
+
+.logo:hover {
+  background-color: #446684;
+
+
+}
+
+
+.logo > a {
+	color: white;
+}
+
+
+.venn-diagram {
+	width: 100%;
+}
+
+
+.boxy {
+  background-color: lightgrey;
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
+
+.padded {
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-bottom: 200px;
+}
+
+
+.intro {
+  padding-left: 100px;
+}
+
+
+
+
+
