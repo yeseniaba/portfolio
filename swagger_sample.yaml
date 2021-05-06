@@ -1,0 +1,54 @@
+openapi: 3.0.1
+info:
+  title: Data API
+  description: The Ripple Data API v2 provides access to information about changes in the XRP Ledger, including transaction history and processed analytical data. This information is stored in a dedicated database, with a REST-like interface to present the data in various formats. Ripple provides the Data API as a public service.
+  version: 2.0.0
+servers:
+- url: https://data.ripple.com/v2
+paths:
+  /ledgers/{ledger_identifier}:
+    get:
+      tags:
+      - ledger
+      summary: Retrieve a Ledger
+      description: Retrieve a specific Ledger by hash, index, date, or latest validated.
+      operationId: getledgerById
+      parameters:
+      - name: ledger_identifier
+        in: path
+        description: An identifier for the ledger to retrieve either the full hash in hex, an integer ledger index, or a date-time. If a date-time is provided, retrieve the ledger that was most recently closed at that time. If omitted, retrieve the latest validated ledger.
+        schema:
+          type: integer
+        required: true #According to the Ripple docs, this should false but I get an error when I validate if I set it to false. So I left it true.  
+      - name: transactions
+        in: query
+        description: If `true`, include the identifying hashes of all transactions that are part of this ledger.
+        schema:
+          type: boolean
+      - name: binary
+        in: query
+        description: If `true`, include all transactions from this ledger as hex-formatted binary data. (If provided, overrides `transactions`.)
+        schema:
+          type: boolean
+      - name: expand
+        in: query
+        description: If `true`, include all transactions from this ledger as nested JSON objects. (If provided, overrides `binary` and `transactions`.)
+        schema:
+          type: boolean
+      responses:
+        200:
+          description: ok
+          content:
+            application/json:
+              example:
+                result: success
+                ledger:
+                  ledger_hash: 3170da37
+                  ledger_index: 8317037
+                  parent_hash: aff6e04f07f
+                  total_coins: 99999980165594400
+                  close_time_res: 10
+                  accounts_hash: 8ad73e49
+                  transaction_hash: 33e0b9c5
+                  close_time: 1408047740
+                  close_time_human: "2014-08-14T20:22:20+00:00"
