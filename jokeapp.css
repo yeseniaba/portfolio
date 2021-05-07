@@ -34,16 +34,19 @@ h1 {
 
 #button {
   background: none;
-  width: 400px;
+  width: 350px;
   color: var(--black);
-  padding: 1rem 2rem;
+  padding: 15px;
   font-weight: 300;
   text-transform: uppercase;
   border: none;
   border-radius: 4px;
   transition: 0.1s ease transform;
   cursor: pointer;
+  background-image: url(tom_segura.png);
+  height: 350px;
 }
+
 
 #button:active {
   transform: translatey(3px);
