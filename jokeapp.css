@@ -33,7 +33,6 @@ h1 {
 }
 
 #button {
-  background: none;
   width: 350px;
   color: var(--black);
   padding: 15px;
