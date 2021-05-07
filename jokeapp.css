@@ -43,6 +43,7 @@ h1 {
   transition: 0.1s ease transform;
   cursor: pointer;
   background-image: url(tom_segura.png);
+  background-color: white;
   height: 350px;
 }
 
