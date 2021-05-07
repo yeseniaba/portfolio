@@ -1,2 +1,2 @@
 # Yesenia Barajas
-Check out [Yesenia's website and portfolio|home.html]
+Check out [Yesenia's portfolio website](home.html)
